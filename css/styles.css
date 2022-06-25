@@ -40,10 +40,28 @@ header nav {
     margin-right: 50px;
 }
 
+@keyframes scaleText {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
 header nav ul li {
     display: inline-block;
     list-style-type: none;
     margin: 0 25px;
+}
+
+header nav ul li:hover{
+    animation: scaleText 1s ease 0s 1 reverse both;
 }
 
 header nav ul li a {
