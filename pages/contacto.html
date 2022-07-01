@@ -2,83 +2,86 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>GPJ - Contacto</title>
-	<link rel="stylesheet" href="../css/styles.css">
-  <link rel="shortcut icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+	<title>GPJ - Historia</title>
+	<link rel="stylesheet" href="../assets/bootstrap-JS/bootstrap.min.css">
+	<script src="../assets/bootstrap-JS/jquery.slim.min.js"></script>
+	<script src="../assets/bootstrap-JS/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="../assets/css/styles.css">
+	<link rel="shortcut icon" type="image/png" sizes="16x16"  href="../assets/images/favicon-16x16.png">
 </head>
 <body>
-	<div id="gridContainer">
-		<header>
+	<div id="gridContainer_contacto">
+		<header id="headerContacto">
 			<div class="logo">
-				<a href="../index.html"><img src="../images/LOGO FINAL.png" alt="logo juniors"></a>
+				<a href="../index.html"><img src="../assets/images/LOGO FINAL.png" alt="logo juniors"></a>
 			</div>
-			<nav>
-				<ul>
-					<li><a href="../index.html">Inicio</a></li>
-					<li><a href="historia.html">Historia</a></li>
-					<li><a href="actividades.html">Actividades</a></li>
-					<li><a href="galeria.html">Galería</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-				</ul>
-			</nav>
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<div class="container-fluid">
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					  <li class="nav-item">
+						<a class="nav-link" href="../index.html">Inicio</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="historia.html">Historia</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="actividades.html">Actividades</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="galeria.html">Galería</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			  </nav>
 		</header>
+    <div class="divContacto">
+      <section class="imgContacto">
+        <img src="../assets/images/helpdesk.png" class="img-fluid" alt="img-fluid" width="300px">
+      </section>
       <section class="formularioPersonal">
         <h1>Contacto</h1>
         <form name="formularioPersonal">
-            <fieldset>
-              <legend>Datos Personales</legend>
-              <label for="first_name">Nombre: </label>
-              <input type="text" id="first_name" name="first_name" placeholder="Escriba su nombre aquí" />
-              <label for="last_name">Apellido: </label>
-              <input type="text" id="first_name" name="last_name" placeholder="Escriba su apellido aquí" autofocus required />
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
-              <label for="nacimiento">Fecha de Nacimiento</label>
-              <input type="date" name="nacimiento" id="nacimiento" />
-              <label for="motivoContacto">Mensaje: </label>
-              <textarea name="experiencia" id="experiencia" rows="5" cols="50"></textarea><br /><br />
-              <label for="sexo">Sexo: </label>
-              <select name="sexo" id="sexo">
-                <option value="M">Masculino</option>
-                <option selected value="F">Femenino</option>
-                <option value="O">Otro</option>
-              </select><br /><br />
-            </fieldset>
-            <fieldset>
-              <legend>Intereses</legend>
-              <label for="deporte">Deporte Principal: </label><br /><br />
-              <input type="radio" id="futbol" name="deporte" value="Futbol">
-              <label for="futbol">Futbol</label>
-              <input type="radio" name="deporte" value="Basquet">
-              <label>Basquet</label>
-              <input type="radio" id="voley" name="deporte" value="Voley">
-              <label for="voley">Voley</label>
-              <input type="radio" name="deporte" value="Hockey">
-              <label>Hockey</label>
-        
-              <label for="intereses">Intereses</label><br /><br />
-              <input type="checkbox" name="intereses" id="cultura">
-              <label for="cultura">Cultura</label>
-              <input type="checkbox" name="intereses" id="deportes">
-              <label for="deportes">Deportes</label>
-              <input type="checkbox" name="intereses" id="turismo">
-              <label for="turismo">Turismo</label>
-              <input type="checkbox" name="intereses" id="cocina">
-              <label for="cocina">Cocina</label>
-            </fieldset>
-            <br /><br /><br /><br />
-        
-            <input type="submit" name="btn_submit" value="Enviar" />
-            <input type="reset" name="btn_reset" value="Limpiar" />
-            <input type="button" name="btn_button" value="Boton" />
-        
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nombre</label>
+              <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-4">
+              <label for="exampleInputPassword1" class="form-label">Apellido</label>
+              <input type="surname" class="form-control" id="exampleInputPassword1">
+            </div>
+            <select class="mb-3" class="form-select" aria-label="Default select">
+              <option selected="">Me identifico como</option>
+              <option value="1">Hombre</option>
+              <option value="2">Mujer</option>
+              <option value="3">Otro</option>
+            </select>
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Email</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese aquí su correo">
+              <div id="email" class="form-text">Tus datos son confidenciales! No se compartirán</div>
+            </div>
+            <div class="mb-4">
+              <label for="formGroupExampleInput2" class="form-label">Mensaje</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese el motivo de contacto">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
       </section>
+    </div>
     <footer>
-          <h3>Club Atlético General Paz Juniors &copy Todos los derechos reservados</h3>
+      <h3>Club Atlético General Paz Juniors &copy Todos los derechos reservados</h3>
     </footer>
-    </div>	
+  </div>	
 </body>
 </html>
