@@ -4,26 +4,47 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>GPJ - Galería</title>
-	<link rel="stylesheet" href="../css/styles.css">
-	<link rel="shortcut icon" type="image/png" sizes="16x16"  href="../images/favicon-16x16.png">
+	<title>GPJ - Historia</title>
+	<link rel="stylesheet" href="../assets/bootstrap-JS/bootstrap.min.css">
+	<script src="../assets/bootstrap-JS/jquery.slim.min.js"></script>
+	<script src="../assets/bootstrap-JS/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="../assets/css/styles.css">
+	<link rel="shortcut icon" type="image/png" sizes="16x16"  href="../assets/images/favicon-16x16.png">
 </head>
 <body>
 	<div id="gridContainer">
 		<header>
 			<div class="logo">
-				<a href="../index.html"><img src="../images/LOGO FINAL.png" alt="logo juniors"></a>
+				<a href="../index.html"><img src="../assets/images/LOGO FINAL.png" alt="logo juniors"></a>
 			</div>
-			<nav>
-				<ul>
-					<li><a href="../index.html">Inicio</a></li>
-					<li><a href="historia.html">Historia</a></li>
-					<li><a href="actividades.html">Actividades</a></li>
-					<li><a href="galeria.html">Galería</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-				</ul>
-			</nav>
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<div class="container-fluid">
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					  <li class="nav-item">
+						<a class="nav-link" href="../index.html">Inicio</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="historia.html">Historia</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="actividades.html">Actividades</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="galeria.html">Galería</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="contacto.html">Contacto</a>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			  </nav>
 		</header>
+
 		<section>
 		<h1>Mirá los momentos más lindos...</h1>
 		<p class="text">
@@ -33,14 +54,32 @@
 		</p>
 		</section>
 		<section>
-			<h2 class="subtitle">Títulos</h2>
-			<article>
-				<img src="../images/copa.jpeg" alt="copa kempes" width="500">
-			</article>
-			<h3 class="subtitle">Momentos</h3>
-			<article>
-				<img src="../images/campeones.jpg" alt="final copa kempes" width="500">
-			</article>
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+					<img src="../assets/images/campeones.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+					<img src="../assets/images/copa.jpeg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+					<img src="../assets/images/hinchada.jpg" class="d-block w-100" alt="...">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+				</div>
 		</section>
 		<footer>
 			<h3>Club Atlético General Paz Juniors &copy Todos los derechos reservados</h3>
