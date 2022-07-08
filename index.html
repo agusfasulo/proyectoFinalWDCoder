@@ -12,6 +12,7 @@
 </head>
 <script src="assets/bootstrap-JS/jquery.slim.min.js"></script>
 <script src="assets/bootstrap-JS/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/0f55816f72.js" crossorigin="anonymous"></script>
 <body>
 	<div id="gridContainer">
 		<header>
@@ -47,42 +48,81 @@
 		</header>
 		<section id="intro">
 			<article>
-				<h1 class="fw-bolder">Bienvenid@s al club</h1>
-				<p class="text">
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore aperiam voluptatibus consequatur ab qui voluptatem omnis mollitia? Esse maiores eveniet illo eius, fugit nisi optio, nobis consectetur, voluptatem neque nostrum.
-					Exercitationem accusantium quia recusandolore exercitationem et in laborum ratione, suscipit repudiandae error, similique temporibus placeat? Blanditiis quidem itaque ab. Dolore libero fugit consectetur quidem, consequatur nihil?
-					Officia natus consectetur eligendi ad iste blanditiis quam, nulla aut quia consequatur atque vel commodi magnam quisquam? Quasi error voluptatibus omnis temporibus incidunt minima fugit magni dolorem explicabo! Quas, alias?
-				</p>
+				<div id="carouselCrossfade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<img src="assets/images/estadio.jpg" class="d-block w-100" alt="Slide 1">
+						<div class="carousel-caption d-none d-md-block">
+							<h5 class="texto-borde">Bienvenid@s!</h5>
+						</div>
+					  </div>
+					  <div class="carousel-item">
+						<img src="assets/images/estadio2.jpg" class="d-block w-100" alt="Slide 2">
+						<div class="carousel-caption d-none d-md-block">
+							<h5 class="texto-borde" >Vas a conocer un poco más del club de tus amores...</h5>
+						</div>
+					  </div>
+					  <div class="carousel-item">
+						<img src="assets/images/campeones.jpg" class="d-block w-100" alt="Slide 3">
+						<div class="carousel-caption d-none d-md-block">
+							<h5 class="texto-borde">Te invitamos a seguir navegando</h5>
+						</div>
+					  </div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselCrossfade" role="button" data-bs-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Anterior</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselCrossfade" role="button" data-bs-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Siguiente</span>
+					</a>
+				  </div>
 			</article>
 		</section>
 
 		<section id="masInfo">
-			<article class="borderBox">
-				<h3 class="subtitle"> Te esperamos todo el año!</h3>
-				<img src="assets/images/estadio.jpg" alt="" width="200px">
-				<p class="text">
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-				Delectus debitis sapiente, in consequuntur modi nihil magni,
-				alias rerum explicabo.
-				</p>
-			</article>
-			<article class="borderBox">
-				<h3 class="subtitle">¡Amamos a Juniors!</h3>
-				<img src="assets/images/estadio2.jpg" alt="" width="200px">
-				<p class="text">
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-				Delectus debitis sapiente.
-				</p>
-			</article>
-			<article class="borderBox">
-				<h3 class="subtitle"> Un club multifacético </h3>
-				<img src="assets/images/estadio.jpg" alt="" width="200px">
-				<p class="text">
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-				Delectus debitis sapiente, in consequuntur modi nihil magni,
-				alias rerum explicabo.
-				</p>
-			</article>
+			<div class="card" class="borderBox">
+				<div class="row g-0">
+				  <div class="col-5 col-sm-4">
+					<img src="assets/images/estadio2.jpg" class="img-fluid w-100" alt="card-horizontal-image">
+				  </div>
+				  <div class="col-7 col-sm-8">
+					<div class="card-body">
+					  <h5 class="card-title subtitle">Card title</h5>
+					  <p class="card-text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab doloribus, velit nesciunt voluptas eum quod temporibus eaque, quis hic laudantium sapiente quae esse eius ex consequuntur a quasi excepturi! Temporibus!</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			<div class="card" class="borderBox">
+				<div class="row g-0">
+				  <div class="col-5 col-sm-4">
+					<img src="assets/images/estadio.jpg" class="img-fluid w-100" alt="card-horizontal-image">
+				  </div>
+				  <div class="col-7 col-sm-8">
+					<div class="card-body">
+					  <h5 class="card-title subtitle">Card title</h5>
+					  <p class="card-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aliquid maiores earum harum accusamus nihil quaerat fugit deleniti doloremque expedita provident laudantium minus, enim cum ex, perferendis ad sequi sint?Sint porro ab facilis. Exercitationem explicabo voluptas expedita voluptatem ipsam est molestias aperiam? Eveniet officia fugit ipsam similique consectetur omnis accusantium doloremque consequuptas! Possimus, harum.</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+			<div class="card" class="borderBox">
+				<div class="row g-0">
+				  <div class="col-5 col-sm-4">
+					<img src="assets/images/copa.jpeg" class="img-fluid w-100" alt="card-horizontal-image">
+				  </div>
+				  <div class="col-7 col-sm-8">
+					<div class="card-body">
+					  <h5 class="card-title subtitle">Card title</h5>
+					  <p class="card-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat animi, fugiat repudiandae neque sequi et vitae, ratione ex iusto obcaecati ad hic rerum sunt? Amet harum voluptates minima optio mollitia.
+					  Commodi deserunt explicabo architecto nesciunt, in iusto consequatur eius voluptate aliquam, a minima. Cum reprehenderit accusantium laboriosam modi, consequatur perspiciatis. Nemo mollitia quis vel reiciendis cumque laborum dolorem. Dolorem, blanditiis.</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
 		</section>
 		<footer>
 			<h3>Club Atlético General Paz Juniors &copy Todos los derechos reservados</h3>
