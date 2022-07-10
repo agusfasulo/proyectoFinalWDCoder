@@ -74,10 +74,13 @@ header nav ul li a:hover {
     color: #beee42;
 }
 
-
 .logo img {
     width: 70px;
     margin-left: 30px;
+}
+
+.logo:hover {
+    animation: scaleText .7s ease 0s 1 reverse both
 }
 
 .texto-borde {
@@ -85,11 +88,23 @@ header nav ul li a:hover {
     color: rgb(8, 0, 92); 
 }
 
-h5 {
+h2 {
     font-family: Oswald, sans-serif;
     font-size: 5rem;
     font-weight: bold;
     color: black;
+}
+
+h5 {
+    font-family: Oswald, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(31, 25, 72);
+}
+
+p {
+    font-family: Oswald, sans-serif;
+    font-size: 1.3rem;    
 }
 
 h1 {
@@ -101,34 +116,9 @@ h1 {
     padding: 20px;
 }
 
-@keyframes myAnim {
-	0% {
-		transform: translate(0);
-	}
-
-	20% {
-		transform: translate(-2px, 2px);
-	}
-
-	40% {
-		transform: translate(-2px, -2px);
-	}
-
-	60% {
-		transform: translate(2px, 2px);
-	}
-
-	80% {
-		transform: translate(2px, -2px);
-	}
-
-	100% {
-		transform: translate(0);
-	}
-}
-
-section#masInfo .card:hover {
-    animation: myAnim 1s linear 0s 1 reverse forwards;
+a {
+    text-decoration: none;
+    color: blue;
 }
 
 section#masInfo article img {
@@ -188,11 +178,24 @@ footer h3{
     text-align: center;
 }
 
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form img{
+    width: 20rem;
+}
+
 @media screen and (max-width: 576px) {
 
     .imgHistoria{
+        display: flex;
+        flex-wrap: wrap;
+    } 
+
+    .form img {
         display: none;
     }
-
-
 }
