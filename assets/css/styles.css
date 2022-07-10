@@ -170,13 +170,14 @@ footer {
     align-items: center;
 }
 
-footer h3{
+footer .text-center{
     color: white;
     font-family: Oswald, sans-serif;
     font-size: 13px;
     text-transform: uppercase;
     text-align: center;
 }
+
 
 .form {
     display: flex;
@@ -186,6 +187,11 @@ footer h3{
 
 .form img{
     width: 20rem;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgb(31, 25, 72);
 }
 
 @media screen and (max-width: 576px) {
