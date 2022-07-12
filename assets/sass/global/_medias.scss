@@ -1,0 +1,10 @@
+@media screen and (max-width: 576px) {
+    .imgHistoria {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .form img {
+      display: none;
+    }
+  }

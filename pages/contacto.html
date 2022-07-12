@@ -4,87 +4,118 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>GPJ - Historia</title>
-	<link rel="stylesheet" href="../assets/bootstrap-JS/bootstrap.min.css">
-	<script src="../assets/bootstrap-JS/jquery.slim.min.js"></script>
+	<title>GPJ - Contacto</title>
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../assets/css/animate.min.css">
-	<script src="../assets/bootstrap-JS/bootstrap.bundle.min.js"></script>
-	<link rel="stylesheet" href="../assets/css/styles.css">
+	<link rel="stylesheet" href="../assets/css/estilos.css">
 	<link rel="shortcut icon" type="image/png" sizes="16x16"  href="../assets/images/favicon-16x16.png">
 </head>
+<script src="../assets/js/jquery.slim.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/0f55816f72.js" crossorigin="anonymous"></script>
 <body>
-	<div id="gridContainer_contacto">
-		<header id="headerContacto">
-			<div class="logo">
-				<a href="../index.html"><img src="../assets/images/LOGO FINAL.png" alt="logo juniors"></a>
-			</div>
-			<nav class="navbar navbar-expand-lg navbar-dark">
-				<div class="container-fluid">
-				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				  </button>
-				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					  <li class="nav-item">
-						<a class="nav-link" href="../index.html">Inicio</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="historia.html">Historia</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="actividades.html">Actividades</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="galeria.html">Galería</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-					  </li>
-					</ul>
-				  </div>
-				</div>
-			  </nav>
-		</header>
-    <div class="divContacto">
-      <section class="imgContacto">
-        <img src="../assets/images/helpdesk.png" class="img-fluid" alt="img-fluid" width="300px">
-      </section>
-      <section class="formularioPersonal">
-        <h1>Contacto</h1>
-        <form name="formularioPersonal">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Nombre</label>
-              <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-4">
-              <label for="exampleInputPassword1" class="form-label">Apellido</label>
-              <input type="surname" class="form-control" id="exampleInputPassword1">
-            </div>
-            <select class="mb-3" class="form-select" aria-label="Default select">
-              <option selected="">Me identifico como</option>
-              <option value="1">Hombre</option>
-              <option value="2">Mujer</option>
-              <option value="3">Otro</option>
-            </select>
-            <div class="mb-3">
-              <label for="formGroupExampleInput" class="form-label">Email</label>
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese aquí su correo">
-              <div id="email" class="form-text">Tus datos son confidenciales! No se compartirán</div>
-            </div>
-            <div class="mb-4">
-              <label for="formGroupExampleInput2" class="form-label">Mensaje</label>
-              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese el motivo de contacto">
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </form>
-      </section>
+  <header>
+    <div class="logo">
+      <a href="../index.html"><img src="../assets/images/LOGO FINAL.png" alt="logo juniors"></a>
     </div>
-    <footer>
-      <h3>Club Atlético General Paz Juniors &copy Todos los derechos reservados</h3>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+          <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="historia.html">Historia</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="actividades.html">Actividades</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="galeria.html">Galería</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+      </nav>
+  </header>
+  <div class="form">
+    <section class=" wow animate__animated animate__fadeInLeft formularioPersonal m-3">
+      <h1 class="wow animate__animated animate__fadeInLeft">Contacto</h1>
+      <form name="formularioPersonal">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Nombre</label>
+            <input type="name" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-4">
+            <label for="exampleInputPassword1" class="form-label">Apellido</label>
+            <input type="surname" class="form-control" id="exampleInputPassword1">
+          </div>
+          <select class="mb-3" class="form-select" aria-label="Default select">
+            <option selected="">Me identifico como</option>
+            <option value="1">Hombre</option>
+            <option value="2">Mujer</option>
+            <option value="3">Otro</option>
+          </select>
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Email</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese aquí su correo">
+            <div id="email" class="form-text">Tus datos son confidenciales! No se compartirán</div>
+          </div>
+          <div class="mb-4">
+            <label for="formGroupExampleInput2" class="form-label">Mensaje</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese el motivo de contacto">
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+    <section class="wow animate__animated animate__fadeInRight">
+      <img src="../assets/images/helpdesk.png" class="img-thumbnail" alt="img-thumbnail">
+    </section>
+  </div>
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
+      <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #3b5998;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+    
+      <!-- Twitter -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #25D366
+        ;"
+        href="#!"
+        role="button"
+        ><i class="fa-brands fa-whatsapp"></i></a>
+      
+      <!-- Instagram -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #ac2bac;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      </section>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 General Paz Juniors - Todos los derechos reservados
+      </div>
+    </div>	  
     </footer>
-  </div>	
-  <script src="../assets/bootstrap-JS/wow.min.js"></script>
+  <script src="../assets/js/wow.min.js"></script>
   <script>
   new WOW().init();
   </script>	

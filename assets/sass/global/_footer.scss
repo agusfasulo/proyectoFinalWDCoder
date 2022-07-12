@@ -1,0 +1,14 @@
+footer {
+    background-color: $general-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .text-center{
+    color: white;
+    font-family: $general-typo;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+}
