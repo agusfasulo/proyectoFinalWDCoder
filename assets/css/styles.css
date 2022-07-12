@@ -6,83 +6,6 @@ html,body {
     height: 100vh;
 }
 
-header {
-    background-color: rgb(31, 25, 72);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-    color: rgb(255 255 255 / 90%);
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: rgb(255 255 255 / 55%);
-}
-
-.navbar-light .navbar-nav .nav-link:hover
-{color:rgba(255, 255, 255, 0.7)}
-
-.navbar-dark .navbar-toggler {
-    color: rgba(255,255,255,.00);
-    border-color: rgba(255,255,255,.01);
-}
-
-.bg-primary {
-    color: rgb(31, 25, 72);
-    ;
-}
-
-.nav-item {
-    margin: 15px;
-}
-
-
-@keyframes scaleText {
-	0% {
-		transform: scale(1);
-	}
-
-	50% {
-		transform: scale(1.1);
-	}
-
-	100% {
-		transform: scale(1);
-	}
-}
-
-header nav {
-    margin-right: 50px;
-} 
-
-header nav ul li:hover{
-    animation: scaleText 1s ease 0s 1 reverse both;
-}
-
-header nav ul li a {
-    font-family: Oswald, sans-serif;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-header nav ul li a:hover {
-    color: #beee42;
-}
-
-.logo img {
-    width: 70px;
-    margin-left: 30px;
-}
-
-.logo:hover {
-    animation: scaleText .7s ease 0s 1 reverse both
-}
-
 .texto-borde {
     -webkit-text-stroke: 2px rgb(255, 255, 255);
     color: rgb(8, 0, 92); 
@@ -163,22 +86,6 @@ fieldset{
     display: flex;
 }
 
-footer {
-    background-color: rgb(31, 25, 72);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer .text-center{
-    color: white;
-    font-family: Oswald, sans-serif;
-    font-size: 13px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-
 .form {
     display: flex;
     align-items: center;
@@ -195,16 +102,4 @@ footer .text-center{
 .bg-dark {
     --bs-bg-opacity: 1;
     background-color: rgb(31, 25, 72);
-}
-
-@media screen and (max-width: 576px) {
-
-    .imgHistoria{
-        display: flex;
-        flex-wrap: wrap;
-    } 
-
-    .form img {
-        display: none;
-    }
 }
