@@ -12,3 +12,10 @@ footer .text-center{
     text-transform: uppercase;
     text-align: center;
 }
+
+@mixin btn-border($transform) {
+    &:hover{
+        transform: scale(1.5)
+    }
+
+}
