@@ -1,3 +1,25 @@
 $general-typo: Oswald, sans-serif;
 
 $general-color: #1f1948;
+
+
+$redes: (
+	twitter: #51aff8,
+	whatsapp: #25D366,
+	facebook: #3b5998,
+	youtube: #ce1312
+);
+
+@each $red, $color in $redes {
+    $color-red: map-get($redes , $red);
+    .red--#{$red} {
+        background: $color-red;
+        &:hover {
+            background: white;
+            .red__nombre {
+                color: $color-red;
+            }
+        }
+    }
+}
+
