@@ -23,3 +23,26 @@ $redes: (
     }
 }
 
+%btn {
+    width: 100px;
+    text-align: center;
+    text-shadow: #1f1948 ;
+    padding: 5px 0;
+    margin: 2px auto;
+    border-radius: 2px;
+    color: #FFFFFF;
+
+  }
+  
+  .btn_send {
+    @extend %btn;
+    background-color: #008514;
+  }
+  .btn_reset {
+    @extend %btn;
+    background-color: #d2d900;
+  }
+  .btn_cancel {
+    @extend %btn;
+    background-color: #D61E20;
+  }
