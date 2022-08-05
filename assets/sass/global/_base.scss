@@ -9,8 +9,9 @@
   }
   
   .texto-borde {
-    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    -webkit-text-stroke: 1.5px rgb(255, 255, 255);
     color: $general-color;
+    font-size: 4.5rem;
   }
   
   h2 {
@@ -30,11 +31,15 @@
   p {
     font-family: $general-typo;
     font-size: 1.3rem;
-  }
+    }
   
+  .card-text {
+    font-size: 1.5rem;
+  }
+
   h1 {
     font-family: $general-typo;
-    font-size: 50px;
+    font-size: 3rem;
     color: rgb(31, 25, 72);
     text-align: center;
     font-weight: bold;
@@ -43,17 +48,12 @@
   
   a {
     text-decoration: none;
-    color: $general-color;
-  }
-  
-  section#masInfo article img {
-    width: 100%;
-    height: auto;
+    color: rgb(2, 2, 120);
   }
   
   .text {
     font-family: $general-typo;
-    font-size: 20px;
+    font-size: 1.5rem;
     color: black;
     text-align: center;
   }
@@ -66,7 +66,11 @@
     text-align: center;
     padding: 1.5rem;
   }
-  
+
+  .row {
+    margin-right: 0;
+  }
+
   fieldset {
     font-family: $general-typo;
     font-size: 20px;
@@ -86,6 +90,7 @@
   
   .imgHistoria {
     display: flex;
+    align-items: center;
   }
   
   .form {

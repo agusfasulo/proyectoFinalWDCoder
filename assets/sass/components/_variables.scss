@@ -24,25 +24,28 @@ $redes: (
 }
 
 %btn {
+  &:hover {
+    animation: scaleText 1s ease 0s 1 reverse both;
+  }
     width: 100px;
     text-align: center;
     text-shadow: #1f1948 ;
     padding: 5px 0;
     margin: 2px auto;
-    border-radius: 2px;
+    border-radius: 3px;
     color: #FFFFFF;
 
   }
   
   .btn_send {
     @extend %btn;
-    background-color: #008514;
+    background-color: #1202a2;
   }
   .btn_reset {
     @extend %btn;
-    background-color: #d2d900;
+    background-color: #010e40;
   }
   .btn_cancel {
     @extend %btn;
-    background-color: #D61E20;
+    background-color: #100074;
   }
